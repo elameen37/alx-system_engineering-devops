@@ -1,1 +1,1 @@
-My first readme for alx bash project
+My first readme for alx shell scripting task
