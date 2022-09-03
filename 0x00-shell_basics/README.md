@@ -12,7 +12,7 @@
 11 - ls -la . .. /boot - List all files in the current directory and the parent of the working directory<br><br>
 12 - file - Prints type of file<br><br>
 13 - ln -s - Create symbolic link<br><br>
-14 - cp -nu *.html .. - Copies all the HTML files from the current working directory tp the parent of the working directory<br>
+14 - cp -nu *.html .. - Copies all the HTML files from the current working directory tp the parent of the working directory<br><br>
 15 - mv [[:upper:]]* /tmp/u -  Move all files beginning with an uppercase letter to the directory /tmp/u<br><br>
 16 - rm *~  - Deletes all files in the current working directory that end with the character ~ <br><br>
 17 - mkdir -p welcome/to/school - Creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory<br><br>
