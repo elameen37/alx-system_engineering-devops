@@ -7,6 +7,7 @@
 6 - chmod ug+x,o+r - adds execute permission to the owner and the group owner, and read permission to the other users and to the file <br><br>
 7 - chmod a+x - adds execute permission to the owner, the group owner, and to the other users, to the file <br><br>
 8 - chmod 007 - sets the permission to a file as follows. owner:no permission, group: no permission, other users:all permission<br>
+<br>
 9 - chmod 753 - sets mode of file to this  <br><br>
 10 - chmod --reference=olleh hello - sets the mode of the file hello thesame as olleh's mode <br><br>
 11 - chmod a+X * - adds execute permission to all subdirectories of the current directory for the owner, group owner and all other users. Regular files should not be changed.<br><br>
