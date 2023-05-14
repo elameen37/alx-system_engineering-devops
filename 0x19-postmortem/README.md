@@ -1,8 +1,8 @@
-#Postmortem
+# Postmortem
 
 During the release of Alx System Engineering & DevOps project 0x19 at approximately 06:07 Greenwich Mean Time (GMT), an outage occurred on an isolated Ubuntu 14.04 container running an Apache web server. When making GET requests to the server, instead of receiving the expected response of an HTML file defining a simple Holberton WordPress site, a 500 Internal Server Error was encountered.
 
-##Debugging Process
+## Debugging Process
 
 LMN INFOHUB identified the issue when starting the project at around 19:20 GMT. The following steps were taken to address the problem:
 
@@ -23,19 +23,19 @@ LMN INFOHUB identified the issue when starting the project at around 19:20 GMT. 
 8. Created a Puppet manifest to automate the fix for this error.
 
 
-##Summary
+## Summary
 
 In summary, the issue was attributed to a typographical error. Specifically, the WordPress application encountered a critical error in wp-settings.php when trying to load the file class-wp-locale.phpp. The correct file name, which should have been located in the wp-content directory of the application folder, is class-wp-locale.php.
 
 The patch involved a simple correction of the typo by removing the trailing `p`.
 
-##Prevention
+## Prevention
 
 This outage was not caused by a web server error but rather an application error. To prevent similar outages in the future, consider the following measures:
 
-*Thorough testing before deploying the application. This error could have been identified and addressed earlier through comprehensive testing.
+* Thorough testing before deploying the application. This error could have been identified and addressed earlier through comprehensive testing.
 
-*Implementing status monitoring by enabling an uptime monitoring service such as UptimeRobot [UptimeRobot](./https://uptimerobot.com/). This would provide instant alerts in the event of a website outage.
+* Implementing status monitoring by enabling an uptime monitoring service such as UptimeRobot [UptimeRobot](./https://uptimerobot.com/). This would provide instant alerts in the event of a website outage.
 
 Additionally, in response to this error, a Puppet manifest was written, which can be found at [0-strace_is_your_friend.pp](https://github.com/elameen37/alx-system_engineering-devops/blob/master/0x17-web_stack_debugging_3/0-strace_is_your_friend.pp)
 
