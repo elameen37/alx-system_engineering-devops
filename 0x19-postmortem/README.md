@@ -4,7 +4,7 @@ During the release of Alx System Engineering & DevOps project 0x19 at approximat
 
 ## Debugging Process
 
-LMN INFOHUB identified the issue when starting the project at around 19:20 GMT. The following steps were taken to address the problem:
+Sammie identified the issue when starting the project at around 19:20 GMT. The following steps were taken to address the problem:
 
 1. Checked the running processes using the command ps aux. Confirmed that two apache2 processes, namely root and www-data, were running correctly.
 
