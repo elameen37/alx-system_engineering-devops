@@ -16,7 +16,7 @@
 server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
-	server_name 100.25.15.155;
+	server_name 34.203.75.154;
 
 	# SSL configuration
 	#
