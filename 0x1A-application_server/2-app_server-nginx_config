@@ -9,9 +9,8 @@ events {
 
 http {
 
-        # gunicorn
-	server {
-            listen          80;
+    server {
+        listen          80;
 	    server_name     127.0.0.1 34.203.75.154;
 	    location /airbnb-onepage/ {
 		include proxy_params;
